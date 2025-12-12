@@ -1,5 +1,6 @@
 # 3D-terrain-generation
-A Python-based terrain generator that creates 3D landscapes with adjustable parameters and procedural noise functions.
+A Blender-based terrain generation tool that lets artists create 3D landscapes by adjusting simple parameters — no coding or mesh editing required.
+This project was built as a final-year university project to simplify procedural terrain workflows for non-technical users.
 
 <img width="1125" height="634" alt="image" src="https://github.com/user-attachments/assets/24abb0bf-f7f4-4194-8b14-4bd16fb62a6c" />
 
@@ -10,18 +11,11 @@ A Python-based terrain generator that creates 3D landscapes with adjustable para
 ● Used for animation, simulation, and video games
 
 ## Features 
-- Procedural 3D terrain generation
-
-- Adjustable parameters (height, scale, smoothness, detail)
-
-- Perlin-noise–based heightmap creation
-
-- Automatic mesh construction
-
-- Simple interface for artists/users
-
-- Real-time visualisation of generated terrain by using 3D software Blender
-
+- Runs directly inside Blender
+- Artists adjust sliders to generate terrain
+- No need to write Python or modify the mesh manually
+- Real-time updates inside the viewport
+- Clean, minimal UI panel inside Blender
 
 ## Flow of system
 
@@ -41,23 +35,28 @@ A Python-based terrain generator that creates 3D landscapes with adjustable para
 
 ## Installation
 
-git clone https://github.com/chanchunkiu/3D-terrain-generation.git
+1. git clone all the files
+2. install requirements.txt
+3.  Open Blender
+4. Go to scripting
+5. load main.py
+6. Press run script
+7. A user interface will pop out
+8. Adjust parameters in the user interface
 
-cd 3D-terrain-generation
+## Use
+After running the script, open the Terrain Generator panel
 
-### virtual environment
-python -m venv venv
-source venv/bin/activate     # Mac/Linux
-venv\Scripts\activate        # Windows
+An artist can control
+- Height
+- noise
+- width
+- scale
 
-### install libraries
-pip install -r requirements.txt
-
-### Run the project
-Add main.py to the Blender script and run it
+The 3D mesh update instantly
 
 ## Rendering
-An artist can render the result by adjusting the shaders, materials by themselves
+Artists can render the result by adjusting the shaders, materials by themselves
 
 <img width="1496" height="667" alt="image" src="https://github.com/user-attachments/assets/5ee16668-92bd-4a09-b6cc-f0c775e0cfe0" />
 
@@ -69,7 +68,8 @@ An artist can render the result by adjusting the shaders, materials by themselve
 - mesh construction
 - interpolation
 - ui design
-- python development
+- Python development
+- Blender API
 
 It was created as my final project for university to explore how terrain tools can help artists rapidly experiment with landscapes.
 
